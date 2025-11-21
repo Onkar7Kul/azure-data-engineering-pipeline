@@ -1,0 +1,6 @@
+{
+  "environment": "dev",
+  "bronze_path": "abfss://raw@storageaccount.dfs.core.windows.net/bronze/",
+  "silver_path": "abfss://clean@storageaccount.dfs.core.windows.net/silver/",
+  "gold_path": "abfss://curated@storageaccount.dfs.core.windows.net/gold/"
+}
