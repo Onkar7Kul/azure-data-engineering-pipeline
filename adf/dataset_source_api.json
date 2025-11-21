@@ -1,0 +1,9 @@
+{
+  "name": "DS_Source_API",
+  "properties": {
+    "type": "RestResource",
+    "typeProperties": {
+      "relativeUrl": "/endpoint"
+    }
+  }
+}
