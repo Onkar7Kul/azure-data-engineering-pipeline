@@ -1,0 +1,4 @@
+source_name,source_type,path_or_url,primary_key,load_type,target_table
+api_orders,rest_api,https://api.sample.com/orders,id,incremental,orders
+customer_csv,csv,/raw/customers.csv,customer_id,full,customers
+sql_products,sql,Server=tcp:sample.database.windows.net;Database=prod;Table=products,product_id,incremental,products
