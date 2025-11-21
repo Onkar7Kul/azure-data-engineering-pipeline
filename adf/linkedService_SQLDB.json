@@ -1,0 +1,10 @@
+{
+  "name": "LS_SQLDB",
+  "type": "Microsoft.DataFactory/factories/linkedServices",
+  "properties": {
+    "type": "AzureSqlDatabase",
+    "typeProperties": {
+      "connectionString": "Server=tcp:<sql-name>.database.windows.net;Database=<db>;Authentication=ActiveDirectoryMSI"
+    }
+  }
+}
