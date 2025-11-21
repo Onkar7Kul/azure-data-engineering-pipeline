@@ -113,6 +113,8 @@ Storage	ADLS Gen2, Delta Lake
 Architecture	Medallion, CDC
 CI/CD	Azure DevOps
 Monitoring	Azure Monitor, Log Analytics
+
+
 📂 Repository Structure
 ├── /adf/
 │   ├── linkedServices
@@ -127,7 +129,9 @@ Monitoring	Azure Monitor, Log Analytics
 │   ├── parameters.json
 └── README.md
 
-📈 Sample PySpark Code (CDC Merge)
+
+
+Sample PySpark Code (CDC Merge)
 df_new = spark.read.format("delta").load(silver_path)
 df_old = spark.read.format("delta").load(gold_path)
 
@@ -141,6 +145,7 @@ df_old = spark.read.format("delta").load(gold_path)
     .whenNotMatchedInsertAll()
     .execute()
 )
+
 
 ✨ Key Outcomes
 
